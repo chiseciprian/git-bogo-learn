@@ -1,5 +1,10 @@
 package ro.fortech.githublearn.repository;
 
-public class UserRepository {
+
+import java.util.UUID;
+import org.springframework.data.jpa.repository.JpaRepository;
+import ro.fortech.githublearn.model.UserModel;
+
+public interface UserRepository extends JpaRepository<UserModel, UUID> {
 
 }
