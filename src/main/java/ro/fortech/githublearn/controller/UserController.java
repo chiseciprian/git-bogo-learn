@@ -19,7 +19,7 @@ public class UserController {
     this.userService = userService;
   }
 
-  @PutMapping
+  @PutMapping("{id}")
   public UserModel updateUser(@PathVariable UUID id,@RequestBody UserModel newUser){
     return userService.updateUser(id,newUser);
   }
