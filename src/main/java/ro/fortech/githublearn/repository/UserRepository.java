@@ -7,4 +7,6 @@ import ro.fortech.githublearn.model.UserModel;
 
 public interface UserRepository extends JpaRepository<UserModel, UUID> {
 
+  UserModel findUserModelById(UUID id);
+
 }
